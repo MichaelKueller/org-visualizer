@@ -14,7 +14,10 @@
  * limitations under the License.
  */
 
-import { Queries, treeBuilderFor } from "./queries";
+import {
+    Queries,
+    treeBuilderFor,
+} from "./queries";
 import { HuckleberryManager } from "../huckleberry/HuckleberryManager";
 import { DefaultProjectAnalysisResultRenderer } from "./projectAnalysisResultUtils";
 import { TypeScriptVersionFeature } from "../huckleberry/TypeScriptVersionFeature";

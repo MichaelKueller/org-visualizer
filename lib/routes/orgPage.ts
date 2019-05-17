@@ -15,7 +15,10 @@
  */
 
 import { ExpressCustomizer } from "@atomist/automation-client/lib/configuration";
-import { Express, RequestHandler, } from "express";
+import {
+    Express,
+    RequestHandler,
+} from "express";
 import { ProjectAnalysisResultStore } from "../analysis/offline/persist/ProjectAnalysisResultStore";
 import { huckQueries } from "./huckleberryQueries";
 import { NodeStack } from "@atomist/sdm-pack-analysis-node";

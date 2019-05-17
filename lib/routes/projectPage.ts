@@ -15,14 +15,22 @@
  */
 
 import { ExpressCustomizer } from "@atomist/automation-client/lib/configuration";
-import { Express, RequestHandler, } from "express";
+import {
+    Express,
+    RequestHandler,
+} from "express";
 import { ProjectAnalysisResultStore } from "../analysis/offline/persist/ProjectAnalysisResultStore";
 import { jsonToQueryString } from "./orgPage";
 import { languagesQuery } from "./projectQueries";
-import { TypeScriptVersion, } from "../huckleberry/TypeScriptVersionFeature";
+import {
+    TypeScriptVersion,
+} from "../huckleberry/TypeScriptVersionFeature";
 import { Huckleberry } from "../huckleberry/Huckleberry";
 import { NodeStack } from "@atomist/sdm-pack-analysis-node";
-import { possibleHuckleberries, presentHuckleberries } from "./huckleberryQueries";
+import {
+    possibleHuckleberries,
+    presentHuckleberries,
+} from "./huckleberryQueries";
 
 export function projectPage(analyzedRepoStore: ProjectAnalysisResultStore): ExpressCustomizer {
     return (express: Express, ...handlers: RequestHandler[]) => {

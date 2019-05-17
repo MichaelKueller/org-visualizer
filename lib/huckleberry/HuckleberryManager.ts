@@ -15,7 +15,9 @@
  */
 
 import { Huckleberry } from "./Huckleberry";
-import { ProjectAnalysis, } from "@atomist/sdm-pack-analysis";
+import {
+    ProjectAnalysis,
+} from "@atomist/sdm-pack-analysis";
 import { ManagedFeature } from "@atomist/sdm-pack-analysis/lib/analysis/TechnologyScanner";
 
 export class HuckleberryManager {
